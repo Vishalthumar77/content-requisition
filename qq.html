@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Content Requisition</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Content Requisition Form</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#form" role="button">Submit Request</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Content Requisition Form</h2>
+                    <h3>Submit your request for new academic content</h3>
+                </hgroup>
+                <form id="requisitionForm" action="#" method="POST" enctype="multipart/form-data">
+                    <div>
+                        <label for="university">University</label>
+                        <input type="text" id="university" name="university" placeholder="Enter university name" required>
+                    </div>
+
+                    <div>
+                        <label for="requestBy">Request Raised by</label>
+                        <input type="text" id="requestBy" name="requestBy" placeholder="Enter requester's name" required>
+                    </div>
+
+                    <div>
+                        <label for="courseProgram">Course/Program</label>
+                        <input type="text" id="courseProgram" name="courseProgram" placeholder="Enter course or program" required>
+                    </div>
+
+                    <div>
+                        <label for="semester">Semester</label>
+                        <input type="text" id="semester" name="semester" placeholder="Enter semester" required>
+                    </div>
+
+                    <div>
+                        <label for="topic">Topic/Subject</label>
+                        <input type="text" id="topic" name="topic" placeholder="Enter topic or subject" required>
+                    </div>
+
+                    <div>
+                        <label for="contentFormat">Content Format</label>
+                        <select id="contentFormat" name="contentFormat" required>
+                            <option value="PDF">PDF</option>
+                            <option value="Word">Word</option>
+                            <option value="Video">Video</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="requestType">Type of Request</label>
+                        <select id="requestType" name="requestType" required>
+                            <option value="New Content">New Content</option>
+                            <option value="Revision">Revision</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="batchDate">Batch/Course Start Date</label>
+                        <input type="date" id="batchDate" name="batchDate" required>
+                    </div>
+
+                    <div>
+                        <label for="deadline">Deadline for Content Team</label>
+                        <input type="date" id="deadline" name="deadline" required>
+                    </div>
+
+                    <div>
+                        <label for="remarks">Remarks (if any)</label>
+                        <textarea id="remarks" name="remarks" rows="4" placeholder="Enter any remarks"></textarea>
+                    </div>
+
+                    <div>
+                        <label for="syllabus">Upload Syllabus (PDF/Word)</label>
+                        <input type="file" id="syllabus" name="syllabus" accept=".pdf, .doc, .docx" required>
+                    </div>
+
+                    <div>
+                        <label for="hodApproval">HOD Approval</label>
+                        <select id="hodApproval" name="hodApproval" required>
+                            <option value="Approved">Approved</option>
+                            <option value="Pending">Pending</option>
+                            <option value="Rejected">Rejected</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="approvedDate">Approved Date</label>
+                        <input type="date" id="approvedDate" name="approvedDate">
+                    </div>
+
+                    <button type="submit">Submit Request</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="container">
+        <small><a href="#privacy-policy">Privacy Policy</a> • <a href="#terms-of-service">Terms of Service</a></small>
+    </footer>
+</body>
+</html>
